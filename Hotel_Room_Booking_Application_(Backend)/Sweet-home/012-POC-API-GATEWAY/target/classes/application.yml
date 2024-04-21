@@ -1,0 +1,18 @@
+server:
+  port: 9292
+  
+spring:
+  cloud:
+      gateway:
+        routes:
+           - id: BOOKING-SERVICE
+             uri: lb://BOOKING-SERVICE
+             predicates:
+                  - Path=/bookingRoom/**
+           - id: PAYMENT-SERVICE
+             uri: lb://PAYMENT-SERVICE
+             predicates:
+                  - Path=/transaction/**
+  application:
+    name: API-GATEWAY
+ 
