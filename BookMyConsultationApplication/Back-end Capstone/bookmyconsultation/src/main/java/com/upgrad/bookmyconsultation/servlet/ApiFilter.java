@@ -32,6 +32,7 @@ public abstract class ApiFilter implements Filter {
         //do nothing
     }
 
-    protected abstract void doFilter(HttpServletRequest servletRequest, HttpServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException;
+    protected abstract void doFilter(HttpServletRequest servletRequest,
+                                     HttpServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException;
 
 }
