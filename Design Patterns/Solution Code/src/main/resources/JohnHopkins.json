@@ -1,0 +1,8 @@
+{
+  "country": "India",
+  "stats": {
+    "confirmed": 10000.5,
+    "deaths": 500,
+    "recovered": 3000
+  }
+}
